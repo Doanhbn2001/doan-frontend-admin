@@ -1,0 +1,118 @@
+body {
+  color: #8e8590;
+}
+.titleh1 {
+  color: black;
+  text-decoration: none;
+  font-weight: 800;
+  margin-left: 2.5%;
+  margin-top: 20px;
+  font-size: 25px;
+  display: inline-block;
+}
+.titleh1:hover {
+  color: blue;
+  font-size: 30px;
+  /* box-shadow: inset 100px 0 0 0 #54b3d6; */
+}
+.btn-b {
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.btn-delete {
+  background-color: #ff4f70;
+  color: white;
+  border: 1px solid #ff4f70;
+  padding: 5px;
+}
+
+.btn-edit {
+  margin-right: 5px;
+  background-color: #22ca80;
+  color: white;
+  border: 1px solid #22ca80;
+  padding: 5px;
+  /* border-radius: 5px; */
+}
+.transactions-box {
+  margin-left: auto;
+  margin-right: auto;
+  width: 95%;
+  margin-top: 20px;
+  border: 1px double #d3d3d3;
+  box-shadow: 5px 5px 5px 5px #888888;
+}
+.transactions-box h1 {
+  margin: 10px;
+  text-align: left;
+  font-size: 30px;
+  font-weight: 400;
+  color: #8e8590;
+}
+/* .t-box {
+    font-size: 10px;
+    text-align: center;
+    margin-bottom: 200px;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    border: 1px double #d3d3d3;
+  } */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: auto;
+}
+.table thead th {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 1px solid #f0f4f7;
+  /* margin-left: 10px; */
+}
+.table tbody td {
+  border: 1px solid #f0f4f7;
+  text-align: center;
+}
+td img {
+  margin: 10px;
+  width: 70px;
+  /* margin-left: 45%; */
+  display: inline-block;
+}
+.space {
+  margin-top: 100px;
+}
+.row-0 {
+  background-color: #f4f8fb;
+}
+.search {
+  margin-left: 2.5%;
+  width: 30%;
+  border: #8583c2 solid 2px;
+  border-radius: 3px;
+  margin-top: 5px;
+}
+.search input {
+  font-size: 16px;
+}
+.logout {
+  height: auto;
+  position: absolute;
+  right: 100px;
+  margin-top: 25px;
+  margin-left: 10px;
+  background-color: #ff4f70;
+  color: white;
+  border: 1px solid #ff4f70;
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 5px;
+}
+.main {
+  color: blue;
+}
+.box-search {
+  padding: 0px;
+}

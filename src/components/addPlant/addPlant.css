@@ -1,0 +1,47 @@
+.form-add {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  border: 1px double #d3d3d3;
+  padding: 10px;
+}
+.input label {
+  display: block;
+}
+.input {
+  width: 100%;
+}
+.input input {
+  border: none;
+  width: 100%;
+  display: block;
+  border-bottom: 1px solid black;
+  margin-bottom: 20px;
+}
+.title {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 600;
+}
+img {
+  width: 100px;
+}
+label {
+  color: black;
+  font-weight: 600;
+  font-size: large;
+}
+button {
+  margin-left: 20px;
+  margin-bottom: 60px;
+}
+.selection {
+  margin-left: 0px;
+}
+.col-sm-10 {
+  text-align: left;
+}
+.mb-3 {
+  text-align: left;
+}
