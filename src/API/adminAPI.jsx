@@ -28,7 +28,6 @@ const AdminAPI = {
   },
 
   addType: (type) => {
-    console.log(type);
     return axios({
       method: 'post',
       url: url + 'auth//add-type',

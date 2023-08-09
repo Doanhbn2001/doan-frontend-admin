@@ -8,7 +8,6 @@ function App() {
   const [isAdmin, setAdmin] = useState(
     localStorage.getItem('adminId') || false
   );
-  console.log(isAdmin);
 
   return (
     <div className="App">

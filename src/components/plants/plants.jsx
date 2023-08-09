@@ -34,7 +34,7 @@ const Plants = ({ setAdmin }) => {
 
   const handleDelete = (t) => {
     console.log(t._id);
-    if (!window.confirm('Do you want delete this Product?')) return;
+    if (!window.confirm('Bạn có muốn xóa thực vật này?')) return;
     const fetchData = async () => {
       const response = await AdminAPI.deletePlant(t._id);
       console.log(response);

@@ -25,6 +25,8 @@ const EditPlant = () => {
   const [aperture_p, setAperture_p] = useState('');
   const [exine_p, setExine_p] = useState('');
   const [structure_p, setStructure_p] = useState('');
+  const [longitude, setLongitude] = useState(0);
+  const [latitude, setLatitude] = useState(0);
 
   const [list, setList] = useState([]);
 
@@ -59,6 +61,8 @@ const EditPlant = () => {
         setAperture_p(response.data.data.aperture_p);
         setExine_p(response.data.data.exine_p);
         setStructure_p(response.data.data.structure_p);
+        setLongitude(Number(response.data.data.longitude));
+        setLatitude(Number(response.data.data.latitude));
         setImage1(response.data.data.img1);
         setImage2(response.data.data.img2);
         // const types = response.data.data;
@@ -102,6 +106,9 @@ const EditPlant = () => {
     formData1.append('aperture_p', aperture_p);
     formData1.append('exine_p', exine_p);
     formData1.append('structure_p', structure_p);
+    formData1.append('longitude', longitude);
+    formData1.append('latitude', latitude);
+
     const fetchData = async () => {
       const response = await AdminAPI.editPlant(formData1);
       if (response.data.error) {
@@ -334,6 +341,40 @@ const EditPlant = () => {
               value={structure_p}
               onChange={(evt) => {
                 setStructure_p(evt.target.value);
+              }}
+            />
+          </Col>
+        </FormGroup>
+        <FormGroup row>
+          <Label for="longitude" sm={2}>
+            Kinh độ
+          </Label>
+          <Col sm={10}>
+            <Input
+              type="number"
+              name="longitude"
+              id="longitude"
+              placeholder=""
+              value={longitude}
+              onChange={(evt) => {
+                setLongitude(evt.target.value);
+              }}
+            />
+          </Col>
+        </FormGroup>
+        <FormGroup row>
+          <Label for="latitude" sm={2}>
+            Vĩ độ
+          </Label>
+          <Col sm={10}>
+            <Input
+              type="number"
+              name="latitude"
+              id="latitude"
+              placeholder=""
+              value={latitude}
+              onChange={(evt) => {
+                setLatitude(evt.target.value);
               }}
             />
           </Col>
